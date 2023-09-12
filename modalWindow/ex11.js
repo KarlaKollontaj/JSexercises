@@ -5,12 +5,12 @@ const modal = document.getElementById("modal");
 openModalBtn.addEventListener("click", openModal);
 closeModalBtn.addEventListener("click", closeModal);
 
+//per far apparire e sparire il modal lavoro sull'aggiungere e rimuovere
+//la classe hidden che abbiamo in css (in questo caso su tailwindcss)
 function openModal() {
-    console.log("apro modal")
     modal.classList.remove("hidden");
 }
 
 function closeModal() {
-    console.log("chiudo modal")
     modal.classList.add("hidden");
 }
